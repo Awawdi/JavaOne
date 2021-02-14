@@ -1,0 +1,12 @@
+ StringBuilder strBuilder = new StringBuilder("Core");
+
+            strBuilder.append("sending an email using "+email.From.name); 
+            strBuilder.append("To: "+email.Receipt.Name.toString() + email.To.postFix.toString());
+            strBuilder.append("From: " + email.Sender.Name.toString() + email.From.postFix.toString());
+
+            strBuilder.append("using the following info:");
+            strBuilder.append("SMTP: " + email.From.serverAddress);
+            strBuilder.append("SMTP user: " + email.From.userName);
+            strBuilder.append("SMTP pass: " + email.From.password);
+            strBuilder.append("Body: " + email.Body);
+            strBuilder.append("Body: " + email.Body);
