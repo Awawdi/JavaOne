@@ -1,0 +1,4 @@
+CMD
+netstat -a -o -n | find /i "LISTENING"
+
+taskkill /PID 21068 /F
